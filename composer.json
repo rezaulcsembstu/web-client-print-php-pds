@@ -1,0 +1,21 @@
+{
+    "name": "rezaulcsembstu/web-client-print-php-pds",
+    "description": "web clint print php sdk as composer package",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": ">=5.4.0",
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rezaul Islam",
+            "email": "rezaul.cse.mbstu@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Neodynamic\\SDK\\Web\\": "src/"
+        }
+    }
+}
