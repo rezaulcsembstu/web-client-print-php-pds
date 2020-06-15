@@ -17,5 +17,8 @@
         "psr-4": {
             "Neodynamic\\SDK\\Web\\": "src/"
         }
+    },
+    "require-dev": {
+        "pds/skeleton": "^1.0"
     }
 }
