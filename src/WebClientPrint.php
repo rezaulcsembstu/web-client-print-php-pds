@@ -345,7 +345,6 @@ class WebClientPrint
      */
     const ClientGetInstalledPrintersInfo = 7;
 
-
     /**
      * Determines the type of process request based on the Query String value. 
      * 
