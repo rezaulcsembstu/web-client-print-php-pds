@@ -37,6 +37,13 @@ class InstalledPrinter extends ClientPrinter
      */
     public $paperName = '';
 
+    /**
+     * Gets or sets the printer's double-sided (duplex) printing capability. Default is the current printer's driver setting.
+     * DEF = 0, SIMPLEX = 1, VERTICAL = 2, HORIZONTAL = 3
+     * @var integer 
+     */
+    public $duplex = Duplex::DEF;
+
 
     /**
      * Creates an instance of the InstalledPrinter class with the specified printer name.
@@ -74,6 +81,8 @@ class InstalledPrinter extends ClientPrinter
         } else {
             $serData .= Utils::SER_SEP . 'def';
         }
+
+        $serData .= Utils::SER_SEP . ((int) $this->duplex);
 
         return $serData;
     }

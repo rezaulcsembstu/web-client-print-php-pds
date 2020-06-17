@@ -19,6 +19,6 @@ class SerialPortHandshake
         if ($val === 'XON_XOFF') return 1;
         if ($val === 'REQUEST_TO_SEND') return 2;
         if ($val === 'REQUEST_TO_SEND_XON_XOFF') return 3;
-        throw new Exception('Invalid value');
+        return 0;
     }
 }

@@ -22,6 +22,6 @@ class PrintOrientation
     {
         if ($val === 'Portrait') return 0;
         if ($val === 'Landscape') return 1;
-        throw new Exception('Invalid value');
+        return 0;
     }
 }

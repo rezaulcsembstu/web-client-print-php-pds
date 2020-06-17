@@ -25,6 +25,11 @@ class TextAlignment
      * Justify alignment
      */
     const Justify = 3;
+    /**
+     * No alignment
+     */
+    const None = 4;
+
 
     public static function parse($val)
     {
@@ -32,6 +37,7 @@ class TextAlignment
         if ($val === 'Center') return 1;
         if ($val === 'Right') return 2;
         if ($val === 'Justify') return 3;
-        throw new Exception('Invalid value');
+        if ($val === 'None') return 4;
+        return 0;
     }
 }

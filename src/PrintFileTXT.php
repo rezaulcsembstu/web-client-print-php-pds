@@ -100,13 +100,11 @@ class PrintFileTXT extends PrintFile
 
     public function serialize()
     {
-        $file = str_replace('\\', 'BACKSLASHCHAR',  $this->fileName);
-        if ($this->copies > 1) {
-            $pfc = 'PFC=' . $this->copies;
-            $file = substr($file, 0, strrpos($file, '.')) . $pfc . substr($file, strrpos($file, '.'));
-        }
+        $this->fileIsPasswordProtected = false;
 
-        return self::PREFIX . $file . '.wtxt' . self::SEP . $this->getFileContent();
+        $this->fileExtension = '.wtxt';
+
+        return parent::serialize();
     }
 
     public function getFileContent()
@@ -128,16 +126,18 @@ class PrintFileTXT extends PrintFile
 
         $content = $this->textContent;
         if (Utils::isNullOrEmptyString($content)) {
-            $content = $this->fileBinaryContent;
             if (!Utils::isNullOrEmptyString($this->filePath)) {
                 $handle = fopen($this->filePath, 'rb');
                 $content = fread($handle, filesize($this->filePath));
                 fclose($handle);
+            } else {
+                $content = $this->fileBinaryContent;
             }
         }
 
-        if (Utils::isNullOrEmptyString($content))
+        if (Utils::isNullOrEmptyString($content)) {
             throw new Exception('The specified Text file is empty and cannot be printed.');
+        }
 
         return $metadata . chr(10) . $content;
     }

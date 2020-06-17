@@ -19,6 +19,6 @@ class SerialPortStopBits
         if ($val === 'ONE') return 1;
         if ($val === 'TWO') return 2;
         if ($val === 'ONE_POINT_FIVE') return 3;
-        throw new Exception('Invalid value');
+        return 0;
     }
 }

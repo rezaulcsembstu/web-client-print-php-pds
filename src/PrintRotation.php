@@ -32,6 +32,6 @@ class PrintRotation
         if ($val === 'Rot90') return 1;
         if ($val === 'Rot180') return 2;
         if ($val === 'Rot270') return 3;
-        throw new Exception('Invalid value');
+        return 0;
     }
 }

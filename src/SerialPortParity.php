@@ -21,6 +21,6 @@ class SerialPortParity
         if ($val === 'EVEN') return 2;
         if ($val === 'MARK') return 3;
         if ($val === 'SPACE') return 4;
-        throw new Exception('Invalid value');
+        return 0;
     }
 }

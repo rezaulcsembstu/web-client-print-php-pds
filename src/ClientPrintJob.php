@@ -119,19 +119,7 @@ class ClientPrintJob
 
         $arrIdx2 = Utils::intToArray(strlen($buffer));
 
-        $lo = '';
-        if (Utils::isNullOrEmptyString(WebClientPrint::$licenseOwner)) {
-            $lo = substr(uniqid(), 0, 8);
-        } else {
-            $lo = 'php>' . base64_encode(WebClientPrint::$licenseOwner);
-        }
-        $lk = '';
-        if (Utils::isNullOrEmptyString(WebClientPrint::$licenseKey)) {
-            $lk = substr(uniqid(), 0, 8);
-        } else {
-            $lk = WebClientPrint::$licenseKey;
-        }
-        $buffer .= $lo . chr(124) . $lk;
+        $buffer .= Utils::getLicense();
 
         return $cpjHeader . $arrIdx1 . $arrIdx2 . $buffer;
     }
