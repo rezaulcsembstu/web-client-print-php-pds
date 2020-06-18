@@ -15,10 +15,10 @@ use Exception;
 //WebClientPrint::$wcpCacheFolder = 'wcpcache/';
 
 /**
- * WebClientPrint provides functions for registering the "WebClientPrint for PHP" solution 
+ * WebClientPrint provides functions for registering the "WebClientPrint for PHP" solution
  * script code in PHP web pages as well as for processing client requests and managing the
  * internal cache.
- * 
+ *
  * @author Neodynamic <http://neodynamic.com/support>
  * @copyright (c) 2019, Neodynamic SRL
  * @license http://neodynamic.com/eula Neodynamic EULA
@@ -48,7 +48,7 @@ class WebClientPrint
 
     /**
      * Gets or sets the License Owner
-     * @var string 
+     * @var string
      */
     static $licenseOwner = '';
     /**
@@ -62,14 +62,14 @@ class WebClientPrint
      */
     static $webClientPrintAbsoluteUrl = '';
     /**
-     * Gets or sets the wcpcache folder URL RELATIVE to WebClientPrint.php file. 
+     * Gets or sets the wcpcache folder URL RELATIVE to WebClientPrint.php file.
      * FILE WRITE permission on this folder is required!!!
      * @var string
      */
     static $wcpCacheFolder = '';
 
     /**
-     * Adds a new entry to the built-in file system cache. 
+     * Adds a new entry to the built-in file system cache.
      * @param string $sid The user's session id
      * @param string $key The cache entry key
      * @param string $val The data value to put in the cache
@@ -117,7 +117,7 @@ class WebClientPrint
     }
 
     /**
-     * Gets a value from the built-in file system cache based on the specified sid & key 
+     * Gets a value from the built-in file system cache based on the specified sid & key
      * @param string $sid The user's session id
      * @param string $key The cache entry key
      * @return string Returns the value from the cache for the specified sid & key if it's found; or an empty string otherwise.
@@ -172,16 +172,16 @@ class WebClientPrint
      * Returns script code for detecting whether WCPP is installed at the client machine.
      *
      * The WCPP-detection script code ends with a 'success' or 'failure' status.
-     * You can handle both situation by creating two javascript functions which names 
-     * must be wcppDetectOnSuccess() and wcppDetectOnFailure(). 
+     * You can handle both situation by creating two javascript functions which names
+     * must be wcppDetectOnSuccess() and wcppDetectOnFailure().
      * These two functions will be automatically invoked by the WCPP-detection script code.
-     * 
-     * The WCPP-detection script uses a delay time variable which by default is 10000 ms (10 sec). 
-     * You can change it by creating a javascript global variable which name must be wcppPingDelay_ms. 
-     * For example, to use 5 sec instead of 10, you should add this to your script: 
-     *   
+     *
+     * The WCPP-detection script uses a delay time variable which by default is 10000 ms (10 sec).
+     * You can change it by creating a javascript global variable which name must be wcppPingDelay_ms.
+     * For example, to use 5 sec instead of 10, you should add this to your script:
+     *
      * var wcppPingDelay_ms = 5000;
-     *    
+     *
      * @param string $webClientPrintControllerAbsoluteUrl The Absolute URL to the WebClientPrintController file.
      * @param string $sessionID The current Session ID.
      * @return string A [script] tag linking to the WCPP-detection script code.
@@ -206,9 +206,9 @@ class WebClientPrint
 
 
     /**
-     * Returns a [script] tag linking to the WebClientPrint script code by using 
+     * Returns a [script] tag linking to the WebClientPrint script code by using
      * the specified URL for the client print job generation.
-     * 
+     *
      * @param string $webClientPrintControllerAbsoluteUrl The Absolute URL to the WebClientPrintController file.
      * @param string $clientPrintJobAbsoluteUrl The Absolute URL to the PHP file that creates ClientPrintJob objects.
      * @paran string $sessionID The current Session ID.
@@ -248,7 +248,7 @@ class WebClientPrint
 
     /**
      * Generates the WebClientPrint scripts based on the specified query string. Result is stored in the HTTP Response Content
-     * 
+     *
      * @param type $webClientPrintControllerAbsoluteUrl The Absolute URL to the WebClientPrintController file.
      * @param type $queryString The Query String from current HTTP Request.
      */
@@ -347,11 +347,11 @@ class WebClientPrint
 
 
     /**
-     * Determines the type of process request based on the Query String value. 
-     * 
+     * Determines the type of process request based on the Query String value.
+     *
      * @param string $queryString The query string of the current request.
      * @return integer A valid type of process request. In case of an invalid value, an Exception is thrown.
-     * @throws Exception 
+     * @throws Exception
      */
     public static function GetProcessRequestType($queryString)
     {

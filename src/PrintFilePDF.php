@@ -14,67 +14,67 @@ class PrintFilePDF extends PrintFile
 
     /**
      * Gets or sets whether to print the PDF document with color images, texts, or other objects as shades of gray. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $printAsGrayscale = false;
 
     /**
      * Gets or sets whether to print any annotations, if any, available in the PDF document. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $printAnnotations = false;
 
     /**
      * Gets or sets a subset of pages to print. It can be individual page numbers, a range, or a combination. For example: 1, 5-10, 25, 50. Default is an empty string which means print all pages.
-     * @var string 
+     * @var string
      */
     public $pagesRange = '';
 
     /**
      * Gets or sets whether pages are printed in reverse order. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $printInReverseOrder = false;
 
     /**
      * Gets or sets the print rotation. Default is None.
-     * @var integer 
+     * @var integer
      */
     public $printRotation = PrintRotation::None;
 
     /**
      * Gets or sets the password for this PDF file.
-     * @var string 
+     * @var string
      */
     public $password = '';
 
     /**
      * Gets or sets whether to perform manual duplex printing. Default is False. Manual duplex lets you print on both sides of a sheet by ordering the print job so that after the first half of the print job has been printed, the job can be flipped over for the second side printing.
-     * @var boolean 
+     * @var boolean
      */
     public $duplexPrinting = false;
 
     /**
      * Gets or sets the dialog message to prompt to the user to flip pages after first half of print job has been printed. Default is an empty string.
-     * @var string 
+     * @var string
      */
     public $duplexPrintingDialogMessage = '';
 
     /**
      * Gets or sets whether to automatically select the print orientation (Portrait or Landscape) that best matches the content. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $autoRotate = false;
 
     /**
      * Gets or sets whether to center the content. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $autoCenter = false;
 
     /**
      * Gets or sets the print sizing option. Default is Fit.
-     * @var integer 
+     * @var integer
      */
     public $sizing = Sizing::Fit;
 

@@ -17,18 +17,18 @@ class SerialPortPrinter extends ClientPrinter
 
     /**
      * Gets or sets the serial port name, for example COM1. Default value is "COM1"
-     * @var string 
+     * @var string
      */
     public $portName = "COM1";
     /**
      * Gets or sets the serial port baud rate in bits per second. Default value is 9600
-     * @var integer 
+     * @var integer
      */
     public $baudRate = 9600;
     /**
      * Gets or sets the serial port parity-checking protocol. Default value is NONE = 0
      * NONE = 0, ODD = 1, EVEN = 2, MARK = 3, SPACE = 4
-     * @var integer 
+     * @var integer
      */
     public $parity = SerialPortParity::NONE;
     /**

@@ -2,7 +2,6 @@
 
 namespace Neodynamic\SDK\Web;
 
-
 /**
  * It represents a file in the server that will be printed at the client side.
  */
@@ -14,18 +13,18 @@ class PrintFile
 
     /**
      * Gets or sets the path of the file at the server side that will be printed at the client side.
-     * @var string 
+     * @var string
      */
     public $filePath = '';
     /**
-     * Gets or sets the file name that will be created at the client side. 
+     * Gets or sets the file name that will be created at the client side.
      * It must include the file extension like .pdf, .txt, .doc, .xls, etc.
-     * @var string 
+     * @var string
      */
     public $fileName = '';
     /**
      * Gets or sets the binary content of the file at the server side that will be printed at the client side.
-     * @var string 
+     * @var string
      */
     public $fileBinaryContent = '';
 
@@ -36,13 +35,13 @@ class PrintFile
     public $copies = 1;
     /**
      * Gets or sets the Encryption Metadata.
-     * @var EncryptMetadata 
+     * @var EncryptMetadata
      */
     public $encryptMetadata = null;
 
     /**
      * Gets or sets whether to delete this file from the client device after printing it. Default is true.
-     * @var boolean 
+     * @var boolean
      */
     public $deleteAfterPrinting = true;
 
@@ -50,7 +49,7 @@ class PrintFile
     const SEP = '|';
 
     /**
-     * 
+     *
      * @param string $filePath The path of the file at the server side that will be printed at the client side.
      * @param string $fileName The file name that will be created at the client side. It must include the file extension like .pdf, .txt, .doc, .xls, etc.
      * @param string $fileBinaryContent The binary content of the file at the server side that will be printed at the client side.

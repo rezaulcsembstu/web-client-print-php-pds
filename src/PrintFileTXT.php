@@ -15,37 +15,37 @@ class PrintFileTXT extends PrintFile
 
     /**
      * Gets or sets the Text content to be printed. Default is an empty string.
-     * @var string 
+     * @var string
      */
     public $textContent = '';
 
     /**
      * Gets or sets the alignment of the text content. Default is Left alignment.
-     * @var integer 
+     * @var integer
      */
     public $textAlignment = TextAlignment::Left;
 
     /**
      * Gets or sets the font name. Default is Arial.
-     * @var string 
+     * @var string
      */
     public $fontName = 'Arial';
 
     /**
      * Gets or sets whether the text is bold. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $fontBold = false;
 
     /**
      * Gets or sets whether the text has the italic style applied. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $fontItalic = false;
 
     /**
      * Gets or sets whether the text is underlined. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $fontUnderline = false;
 
@@ -56,44 +56,44 @@ class PrintFileTXT extends PrintFile
     public $fontStrikeThrough = false;
 
     /**
-     * Gets or sets the font size in Points unit. Default is 10pt. 
-     * @var float 
+     * Gets or sets the font size in Points unit. Default is 10pt.
+     * @var float
      */
     public $fontSizeInPoints = 10.0;
 
     /**
      * Gets or sets the Color for the printed text. Color must be specified in Hex notation for RGB channels respectively e.g. #rgb or #rrggbb. Default is #000000.
-     * @var string 
+     * @var string
      */
     public $textColor = "#000000";
 
     /**
      * Gets or sets the print orientation. Default is Portrait.
-     * @var integer 
+     * @var integer
      */
     public $printOrientation = PrintOrientation::Portrait;
 
     /**
      * Gets or sets the left margin for the printed text. Value must be specified in Inch unit. Default is 0.5in
-     * @var float 
+     * @var float
      */
     public $marginLeft = 0.5;
 
     /**
      * Gets or sets the right margin for the printed text. Value must be specified in Inch unit. Default is 0.5in
-     * @var float 
+     * @var float
      */
     public $marginRight = 0.5;
 
     /**
      * Gets or sets the top margin for the printed text. Value must be specified in Inch unit. Default is 0.5in
-     * @var float 
+     * @var float
      */
     public $marginTop = 0.5;
 
     /**
      * Gets or sets the bottom margin for the printed text. Value must be specified in Inch unit. Default is 0.5in
-     * @var float 
+     * @var float
      */
     public $marginBottom = 0.5;
 

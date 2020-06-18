@@ -2,8 +2,6 @@
 
 namespace Neodynamic\SDK\Web;
 
-use Exception;
-
 /**
  * Specifies the control protocol used in establishing a serial port communication.
  */

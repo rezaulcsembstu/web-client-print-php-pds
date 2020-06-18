@@ -14,17 +14,17 @@ class NetworkPrinter extends ClientPrinter
 
     /**
      * Gets or sets the DNS name assigned to the printer. Default is an empty string
-     * @var string 
+     * @var string
      */
     public $dnsName = "";
     /**
      * Gets or sets the Internet Protocol (IP) address assigned to the printer. Default value is an empty string
-     * @var string 
+     * @var string
      */
     public $ipAddress = "";
     /**
      * Gets or sets the port number assigned to the printer. Default value is 0
-     * @var integer 
+     * @var integer
      */
     public $port = 0;
 
