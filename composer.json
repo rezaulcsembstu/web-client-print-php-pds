@@ -4,22 +4,41 @@
     "type": "library",
     "version": "1.0.0",
     "require": {
-        "php": ">=5.4.0",
+        "php": "^7.1",
         "phpseclib/phpseclib": "^2.0"
+    },
+    "require-dev": {
+        "pds/skeleton": "^1.0",
+        "phpunit/phpunit": "^7.0"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Rezaul Islam",
-            "email": "rezaul.cse.mbstu@gmail.com"
+            "name": "MD. Rezaul Islam",
+            "email": "rezaul.cse.mbstu@gmail.com",
+            "role": "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Neodynamic\\SDK\\Web\\": "src/"
+            "Neodynamic\\SDK\\Web\\": "src"
         }
     },
-    "require-dev": {
-        "pds/skeleton": "^1.0"
+    "autoload-dev": {
+        "psr-4": {
+            "Neodynamic\\SDK\\Web\\Tests\\": "tests"
+        }
+    },
+    "keywords": [
+        "rezaulcsembstu",
+        "web-client-print-php-pds"
+    ],
+    "homepage": "https://github.com/rezaulcsembstu/web-client-print-php-pds",
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
