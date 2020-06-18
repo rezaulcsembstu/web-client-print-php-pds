@@ -2,7 +2,6 @@
 
 namespace Neodynamic\SDK\Web;
 
-use Exception;
 
 /**
  * Specifies the number of stop bits used for Serial Port settings.
