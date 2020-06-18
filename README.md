@@ -1,4 +1,3 @@
-web-client-print-php-pds
 # Very short description of the package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/rezaulcsembstu/web-client-print-php-pds.svg?style=flat-square)](https://packagist.org/packages/rezaulcsembstu/web-client-print-php-pds)

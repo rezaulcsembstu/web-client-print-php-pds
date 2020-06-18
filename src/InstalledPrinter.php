@@ -14,33 +14,33 @@ class InstalledPrinter extends ClientPrinter
 
     /**
      * Gets or sets the name of the printer installed in the client machine. Default value is an empty string.
-     * @var string 
+     * @var string
      */
     public $printerName = '';
 
     /**
      * Gets or sets whether to print to Default printer in case of the specified one is not found or missing. Default is False.
-     * @var boolean 
+     * @var boolean
      */
     public $printToDefaultIfNotFound = false;
 
 
     /**
      * Gets or sets the name of the tray supported by the client printer. Default value is an empty string.
-     * @var string 
+     * @var string
      */
     public $trayName = '';
 
     /**
      * Gets or sets the name of the Paper supported by the client printer. Default value is an empty string.
-     * @var string 
+     * @var string
      */
     public $paperName = '';
 
     /**
      * Gets or sets the printer's double-sided (duplex) printing capability. Default is the current printer's driver setting.
      * DEF = 0, SIMPLEX = 1, VERTICAL = 2, HORIZONTAL = 3
-     * @var integer 
+     * @var integer
      */
     public $duplex = Duplex::DEF;
 

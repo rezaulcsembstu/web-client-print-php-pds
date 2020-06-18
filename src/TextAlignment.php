@@ -2,8 +2,6 @@
 
 namespace Neodynamic\SDK\Web;
 
-use Exception;
-
 /**
  * Specifies the text alignment
  */

@@ -21,40 +21,40 @@ class ClientPrintJob
      * - Use a ParallelPortPrinter object for using a printer which is connected through a parallel port in the client machine.
      * - Use a SerialPortPrinter object for using a printer which is connected through a serial port in the client machine.
      * - Use a NetworkPrinter object for using a Network IP/Ethernet printer which can be reached from the client machine.
-     * @var ClientPrinter 
+     * @var ClientPrinter
      */
     public $clientPrinter = null;
     /**
      * Gets or sets the printer's commands in text plain format. Default is an empty string.
-     * @var string 
+     * @var string
      */
     public $printerCommands = '';
     /**
      * Gets or sets the num of copies for Printer Commands. Default is 1.
-     * Most Printer Command Languages already provide commands for printing copies. 
-     * Always use that command instead of this property. 
+     * Most Printer Command Languages already provide commands for printing copies.
+     * Always use that command instead of this property.
      * Refer to the printer command language manual or specification for further details.
-     * @var integer 
+     * @var integer
      */
     public $printerCommandsCopies = 1;
     /**
      * Gets or sets whether the printer commands have chars expressed in hexadecimal notation. Default is false.
      * The string set to the $printerCommands property can contain chars expressed in hexadecimal notation.
-     * Many printer languages have commands which are represented by non-printable chars and to express these commands 
+     * Many printer languages have commands which are represented by non-printable chars and to express these commands
      * in a string could require many concatenations and hence be not so readable.
-     * By using hex notation, you can make it simple and elegant. Here is an example: if you need to encode ASCII 27 (escape), 
-     * then you can represent it as 0x27.        
-     * @var boolean 
+     * By using hex notation, you can make it simple and elegant. Here is an example: if you need to encode ASCII 27 (escape),
+     * then you can represent it as 0x27.
+     * @var boolean
      */
     public $formatHexValues = false;
     /**
      * Gets or sets the PrintFile object to be printed at the client side. Default is NULL.
-     * @var PrintFile 
+     * @var PrintFile
      */
     public $printFile = null;
     /**
      * Gets or sets an array of PrintFile objects to be printed at the client side. Default is NULL.
-     * @var array 
+     * @var array
      */
     public $printFileGroup = null;
 

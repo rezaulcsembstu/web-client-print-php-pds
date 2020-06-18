@@ -2,10 +2,8 @@
 
 namespace Neodynamic\SDK\Web;
 
-use Exception;
-
 /**
- * Specifies the parity bit for Serial Port settings. 
+ * Specifies the parity bit for Serial Port settings.
  */
 class SerialPortParity
 {

@@ -14,7 +14,7 @@ class ParallelPortPrinter extends ClientPrinter
 
     /**
      * Gets or sets the parallel port name, for example LPT1. Default value is "LPT1"
-     * @var string 
+     * @var string
      */
     public $portName = "LPT1";
 

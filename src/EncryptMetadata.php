@@ -39,7 +39,7 @@ class EncryptMetadata
 
 
     /**
-     * 
+     *
      * @param type $pubKeyBase64 The RSA Public Key in Base64 format sent by WCPP Client Utility.
      * @param type $pubKeySignatureKeyBase64 The RSA Public Key Signature in Base64 format sent by WCPP Client Utility.
      */

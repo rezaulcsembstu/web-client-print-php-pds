@@ -4,7 +4,6 @@ namespace Neodynamic\SDK\Web;
 
 use ZipArchive;
 
-
 /**
  * Specifies information about a group of ClientPrintJob objects to be processed at the client side.
  */
@@ -13,7 +12,7 @@ class ClientPrintJobGroup
 
     /**
      * Gets or sets an array of ClientPrintJob objects to be processed at the client side. Default is NULL.
-     * @var array 
+     * @var array
      */
     public $clientPrintJobGroup = null;
 
